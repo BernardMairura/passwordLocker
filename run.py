@@ -124,6 +124,20 @@ def main():
             print(f" New {site} account by {f_name} {l_name} created successfully")
             print(f" Your {user_name} and  password is {password}")
             print('\n')
+        elif short_code == 'ad':
+
+            if display_user():
+                print("List of your accounts")
+                print('\n')
+
+                for User in display_users():
+                    print(f"{User.first_name} {User.last_name} has an account for {site}")
+
+                print('\n')
+            else:
+                print('\n')
+                print("You don't have an existing account")
+                print('\n')
         
 
 
