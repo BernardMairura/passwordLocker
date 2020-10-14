@@ -139,11 +139,11 @@ def main():
                 print("You don't have an existing account")
                 print('\n')
 
-          elif short_code == "ex":
+        elif short_code == "ex":
             print(":/ Come back again...")
             break
-        else:
-            print(" :( please key in allowed options only !!")
+    else:
+        print(" :( please key in allowed options only !!")
         
 
 
