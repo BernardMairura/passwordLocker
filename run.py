@@ -104,25 +104,25 @@ def main():
             print(f"Welcome to {site} account")
 
             print("First name ....")
-            f_name = input()
+            fname = input()
 
             print("Last name ...", )
-            l_name = input()
+            lname = input()
 
             print("Email address ...")
             email = input()
 
             print("Enter username ... (a password will be generated for you...)")
-            user_name = input()
+            username = input()
 
             s = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*?"
             password = "".join(random.sample(s, 7))
 
-            save_user(create_user(f_name,l_name,email))  # create and save new user account.
-            save_credential(create_credential(user_name, password))  # create and save a password.
+            save_user(create_user(fname,lname,email))  # create and save new user account.
+            save_credential(create_credential(username, password))  # create and save a password.
             print('\n')
-            print(f" New {site} account by {f_name} {l_name} created successfully")
-            print(f" Your {user_name} and  password is {password}")
+            print(f" New {site} account by {fname} {lname} created successfully")
+            print(f" Your {username} and  password is {password}")
             print('\n')
         elif short_code == 'ad':
 
@@ -130,8 +130,8 @@ def main():
                 print("List of your accounts")
                 print('\n')
 
-                for User in display_users():
-                    print(f"{User.first_name} {User.last_name} has an account for {site}")
+                for user in display_users():
+                    print(f"{user.first_name} {user.last_name} has an account for {site}")
 
                 print('\n')
             else:
@@ -139,11 +139,11 @@ def main():
                 print("You don't have an existing account")
                 print('\n')
 
-          elif short_code == "ex":
+        elif short_code == "ex":
             print(":/ Come back again...")
             break
-        else:
-            print(" :( please key in allowed options only !!")
+    else:
+        print(" :( please key in allowed options only !!")
         
 
 
