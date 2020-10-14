@@ -23,3 +23,21 @@ class User:
     @classmethod
     def display_users(cls):
         return cls.display_users
+
+class Credentials:
+
+        """
+
+        A class that generates new instances of logins
+        """
+        def __init__(self,username,password):
+            self.username=username
+            self.password=password
+
+        credentials_list=[]
+
+        def save_credentials(self):
+
+            """Method that saves credential objects into credentials_list
+            """
+            Credentials.credentials_list.append(self)
