@@ -89,6 +89,13 @@ def main():
             print("Enter Password ...")
             password = input()
 
+            save_user(create_user(fname, lname,email))  # creates and saves new user.
+            save_credential(create_credential(username, password))  # creates and saves credentials for the new user.
+            print('\n')
+            print(f" A new {site} account by {fname} {lname} has successfully been created")
+            print(f" The username is {username} and the password is {password}")
+            print('\n')
+
 
 
 
