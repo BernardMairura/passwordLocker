@@ -42,23 +42,23 @@ class TestCredentials(unittest.TestCase):
         """
         Credentials.credentials_list = []
 
-    def test_find_credential_by_name(self):
-        """
-        Test to check if we can find credentials and display information
-        """
-        self.new_credentials.save_credentials()
-        new_test_credential = Credentials("Linkdin", "123")
-        new_test_credential.save_credentials()
+    # def test_find_credential_by_name(self):
+    #     """
+    #     Test to check if we can find credentials and display information
+    #     """
+    #     self.new_credentials.save_credentials()
+    #     new_test_credential = Credentials("Linkdin", "123")
+    #     new_test_credential.save_credentials()
 
-        found_credential = Credentials.find_by_name("Linkdin")
+    #     found_credential = Credentials.find_by_name("Linkdin")
 
-        self.assertEqual(found_credential.account_name, new_test_credential.account_name)
+    #     self.assertEqual(found_credential.account_name, new_test_credential.account_name)
 
-    def test_display_all_credentials(self):
-        """
-        TestCase to test whether all contacts can be displayed
-        """
-        self.assertEqual(Credentials.display_credentials(), Credentials.credentials_list)
+    # def test_display_all_credentials(self):
+    #     """
+    #     TestCase to test whether all contacts can be displayed
+    #     """
+    #     self.assertEqual(Credentials.display_credentials(), Credentials.credentials_list)
 
 
 if __name__ == '__main__':
