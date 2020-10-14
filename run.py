@@ -66,6 +66,28 @@ def main():
         print("Actions: \n nu - create a new user account \n pa - password account\n ad - display account \n ex -exit  \n")
 
         short_code = input().lower()
+        
+        if short_code == 'nu':
+            print("New User")
+            print("-"*10)
+            print("please create your prefered site account")
+            site = input()
+            print(f" welcome to {site} account")
+
+            print("First name ....")
+            fname = input()
+
+            print("Last name ...")
+            lname = input()
+
+            print("Email address ...")
+            email = input()
+
+            print("Enter username ...")
+            username = input()
+
+            print("Enter Password ...")
+            password = input()
 
 
 
