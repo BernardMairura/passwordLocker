@@ -58,5 +58,25 @@ def delete_credential(Credentials):
     Credentials.delete_credential()
 
 
+def main():
+
+    print("Password Locker.Select your desired  action")
+
+    while True:
+        print("Actions: \n nu - create a new user account \n pa - password account\n ad - display account \n ex -exit  \n")
+
+        short_code = input().lower()
+
+
+
+
+
+
+
+if __name__ == '__main__':
+    main()
+
+
+
 
 
