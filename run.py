@@ -16,7 +16,7 @@ def save_user(User):
     """
     User.save_user_details()
 
-def display_user():
+def display_user(User):
     """
     Function that returns saved users
     """
